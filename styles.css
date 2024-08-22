@@ -1,0 +1,397 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    line-height: 1.6;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    margin-left: 10%;
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+/* Main content styling */
+main {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    position: relative;
+    z-index: 1;
+    max-width: 410px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    left: 30%
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-title {
+    color: blue;
+    font-size: xx-large;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.terms {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.terms label {
+    margin-left: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.down-arrow {
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+}
+
+#submit {
+    background-color: blue;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 50%;
+}
+
+/* Info section styling */
+.info-section {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 9%; /* Adjust this value to move more to the left */
+    padding-right: 15%; /* Less padding on the left, more on the right */
+}
+
+.info-section-container-one, .benefits {
+    max-width: 600px; /* Set a max-width to control the content width */
+    width: 100%;
+    margin-left: 0; /* Start from the left without centering */
+    margin-right: auto; /* Align more to the left */
+}
+
+.info-section h1 {
+    color: blue;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#first-paragraph {
+    color: blue;
+    font-size: 27px;
+    text-align: justify;
+}
+
+.info-section p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 20px; /* Adds spacing between the grid items */
+    width: 100%; /* Ensure it fills the available width */
+    margin-top: 20px;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px;
+}
+
+.benefit img {
+    display: block;
+    margin-bottom: 10px; /* Space between the image and text */
+    max-width: 50px;
+}
+
+.benefit p {
+    text-align: left; /* Ensure text aligns to the left */
+}
+
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #232023;
+    color: white;
+    padding-top: 3%;
+    padding-left: 9%;
+    padding-right: 15%;
+}
+
+.footer-container-one {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+.copyright {
+    padding-bottom: 3%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    margin-bottom: 3%;
+}
+
+.link-pair {
+    margin-top: 10px; /* Space between pairs of links */
+    display: flex;
+    gap: 10px; /* Space between individual links in a pair */
+}
+
+footer p,
+footer a,
+footer address {
+    color: rgba(236, 229, 229, 0.808);
+}
+
+#address-small {
+    display: flex;
+    max-width: 15%;
+    text-align: left;
+}
+
+.footer-seperate-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+address {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Adjusting the content wrapper for smaller screens */
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Allow the height to adjust */
+    }
+
+    /* Adjusting the image section for smaller screens */
+    .image-section {
+        width: 100%;
+        height: 50vh; /* Adjust image height for better visibility */
+        position: relative; /* Change to relative to maintain position in flow */
+    }
+
+    .hero-image {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    /* Adjusting the form container for smaller screens */
+    .form-container {
+        max-width: 90%; /* Reduce max-width for smaller screens */
+        left: 0; /* Center form on smaller screens */
+        margin: 0 5%; /* Add margin for breathing space */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .form-section {
+        padding: 10px; /* Further reduce padding */
+        border-radius: 10px;
+    }
+
+    /* Adjusting the form title for smaller screens */
+    .form-title {
+        font-size: large;
+    }
+
+    /* Adjusting the info section for smaller screens */
+    .info-section {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 20px;
+    }
+
+    .benefit {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: justify;
+    }
+
+    /* Adjusting the benefits grid for smaller screens */
+    .benefits {
+        grid-template-columns: 1fr; /* Change to single column layout */
+        gap: 15px; /* Adjust spacing */
+    }
+
+    .benefit img {
+        max-width: 40px; /* Reduce image size */
+    }
+
+    /* Adjusting the footer for smaller screens */
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-container-one {
+        align-items: start; /* Center items in the footer */
+    }
+
+    .footer-links {
+        align-items: normal;
+    }
+
+    address {
+        text-align: justify; /* Center text in address */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Further adjustments for extra small devices */
+    .image-section::after {
+        content: "";
+        display: contents;
+        width: 100%;
+        height: 1px;
+        background-color: #f02121; /* Adjust the color to your preference */
+        margin: 20px 0; /* Adjust the margin to your preference */
+    }
+    .form-container {
+        max-width: 100%;
+        margin: 0 2%; /* Narrower margins */
+        padding: 10px; /* Less padding */
+    }
+
+    .info-section h1 {
+        font-size: 30px; /* Smaller font size for headings */
+    }
+
+    #first-paragraph {
+        font-size: 22px; /* Smaller font size for first paragraph */
+    }
+
+    .benefit p {
+        font-size: 14px; /* Reduce text size in benefit section */
+    }
+
+    .benefit img {
+        max-width: 30px; /* Further reduce image size */
+    }
+
+    footer {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    address {
+        text-align: justify;
+    }
+}
